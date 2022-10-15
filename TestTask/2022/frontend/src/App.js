@@ -45,7 +45,7 @@ function App() {
 			<AppBar position="static">
 				<Toolbar>
 					<Typography variant="h4" width="100%">
-						Accounting of company employees
+						Accounting for Employees
 					</Typography>
 					<Divider />
 					<Chip
