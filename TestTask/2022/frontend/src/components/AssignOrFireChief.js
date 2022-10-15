@@ -2,7 +2,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { IconButton, Tooltip } from "@mui/material";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 
-const AssignOrFireBoss = (props) => {
+const AssignOrFireChief = (props) => {
 	const fireBoss = () => {
 		if (window.confirm("Are you sure to fire?")) {
 			updateState(false);
@@ -31,7 +31,7 @@ const AssignOrFireBoss = (props) => {
 	let boss = props.employees.find((employee) => employee.boss);
 	if (boss) return <></>;
 	return (
-		<Tooltip title="Assign as boss of this department">
+		<Tooltip title="Assign as chief of this department">
 			<IconButton onClick={assignBoss}>
 				<AssignmentIndIcon color="success" />
 			</IconButton>
@@ -39,4 +39,4 @@ const AssignOrFireBoss = (props) => {
 	);
 };
 
-export default AssignOrFireBoss;
+export default AssignOrFireChief;
