@@ -7,7 +7,7 @@ import DepartmentInfo from "./DepartmentInfo";
 import CustomToolbar from "./CustomToolbar";
 import { IconButton, Tooltip } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
-import AssignOrFireBoss from "./AssignOrFireBoss";
+import AssignOrFireChief from "./AssignOrFireChief";
 
 const Employees = (props) => {
 	const columns = [
@@ -17,7 +17,7 @@ const Employees = (props) => {
 			width: 20,
 			renderCell: (row) =>
 				row.row.boss ? (
-					<Tooltip title="He is the boss of this department!">
+					<Tooltip title="He is the chief of this department!">
 						<IconButton>
 							<StarIcon color="success" />
 						</IconButton>
@@ -51,7 +51,7 @@ const Employees = (props) => {
 			sortable: false,
 			filterable: false,
 			renderCell: (row) => (
-				<AssignOrFireBoss row={row} employees={props.employees} />
+				<AssignOrFireChief row={row} employees={props.employees} />
 			),
 		},
 	];
